@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.login-card {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+
+  .mat-card-header,
+  .mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Removed for better responsiveness */
+  }
+
+  /* Added a new class for inputs */
+  .input {
+    max-width: 387px; /* Set the desired max-width */
+    width: 100%; /* Ensures full width on smaller screens */
+  }
+
+  .mat-raised-button {
+    border-radius: 100px; /* Redondea las esquinas del botón */
+  }
+
+  .logo {
+    margin-bottom: 16px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px;
+}
+
+.login-button {
+  height: 40px;
+  width: 200px;
+}
+
+.logo-img {
+  height: 200px;
+  width: 295px;
+}
+
+.input mat-icon-button {
+  margin-left: 4px;
+}

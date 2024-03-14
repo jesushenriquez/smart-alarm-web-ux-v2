@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="content">
+    <mat-card
+      class="login-card"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <mat-card-header>
+        <img
+          src="assets/images/logo-smart-alarm.png"
+          alt="Logo"
+          class="logo-img"
+        />
+      </mat-card-header>
+
+      <mat-card-content>
+        <mat-form-field class="input">
+          <mat-label>Correo electrónico</mat-label>
+          <input
+            matInput
+            type="email"
+            placeholder="Ingrese su correo electrónico"
+          />
+        </mat-form-field>
+        <mat-form-field class="input">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" placeholder="Ingrese su contraseña" />
+        </mat-form-field>
+
+        <button
+          mat-raised-button
+          color="accent"
+          class="login-button"
+          (click)="login()"
+        >
+          Iniciar sesión
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div
+    class="footer mat-typography"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <p>© SmartAlarm 2024</p>
+  </div>
+</div>
