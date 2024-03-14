@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    class="sidenav"
+    fixedInViewport
+    [opened]="true"
+    mode="side"
+  >
+    <!-- Agrega el logo encima del menú -->
+    <div class="logo-container">
+      <img src="assets/images/logo-smart-alarm.png" alt="Logo" class="logo" />
+    </div>
+
+    <!-- Lista de navegación -->
+    <mat-nav-list>
+      <a mat-list-item class="non-clickable mat-typography">Menú</a>
+      <a mat-list-item (click)="dashboard()" class="footer mat-typography"
+        ><mat-icon class="icon">fiber_manual_record</mat-icon> Dashboard</a
+      >
+      <a mat-list-item (click)="usuarios()" class="footer mat-typography"
+        ><mat-icon class="icon">fiber_manual_record</mat-icon>Usuario</a
+      >
+      <a mat-list-item (click)="exit()" class="footer mat-typography"
+        ><mat-icon class="icon">fiber_manual_record</mat-icon>Salir</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Aquí puedes colocar el contenido principal de tu aplicación -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

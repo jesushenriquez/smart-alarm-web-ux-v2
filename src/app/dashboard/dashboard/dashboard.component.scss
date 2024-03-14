@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: flex-start; /* Cambia a flex-start */
+  gap: 10px; /* Espacio entre las tarjetas */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: var(
+    --primary-color
+  ); /* Utiliza el color primario como fondo */
+}
+
+.title {
+  font-size: 16px;
+  text-align: center;
+}
+.mat-card-title {
+  text-align: center;
+}
+
+.mat-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  margin-left: 370px; /* Ancho del menú lateral */
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.number {
+  font-size: 64px;
+  text-align: center;
+}
